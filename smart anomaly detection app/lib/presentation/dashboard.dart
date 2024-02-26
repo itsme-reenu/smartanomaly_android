@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/core/app_export.dart';
-import 'package:reenu_susan_kurian_112033_s_application1/presentation/galileo_design_screen/designpage.dart';
+import 'package:reenu_susan_kurian_112033_s_application1/presentation/designpage.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({Key? key}) : super(key: key);

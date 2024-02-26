@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/core/app_export.dart';
-import 'package:reenu_susan_kurian_112033_s_application1/presentation/galileo_design_screen/dashboard.dart';
+import 'package:reenu_susan_kurian_112033_s_application1/presentation/dashboard.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/widgets/custom_elevated_button.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/widgets/custom_text_form_field.dart';
 

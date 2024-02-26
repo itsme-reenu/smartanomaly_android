@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/core/app_export.dart';
-import 'package:reenu_susan_kurian_112033_s_application1/presentation/galileo_design_screen/designpage.dart';
-import 'package:reenu_susan_kurian_112033_s_application1/presentation/galileo_design_screen/login_page.dart';
+import 'package:reenu_susan_kurian_112033_s_application1/presentation/designpage.dart';
+import 'package:reenu_susan_kurian_112033_s_application1/presentation/login_page.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/widgets/custom_elevated_button.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
