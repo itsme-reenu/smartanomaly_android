@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/core/app_export.dart';
+import 'package:reenu_susan_kurian_112033_s_application1/logic/auth_page.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/presentation/designpage.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/presentation/login_page.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/widgets/custom_elevated_button.dart';
@@ -169,7 +170,7 @@ class CarouselScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => LoginScreen()),
+                    MaterialPageRoute(builder: (context) =>  LoginScreen()),
                   );
                 },
               ),
@@ -240,7 +241,7 @@ class CarouselScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => LoginScreen()),
+                    MaterialPageRoute(builder: (context) =>  LoginScreen()),
                   );
                 },
               ),
