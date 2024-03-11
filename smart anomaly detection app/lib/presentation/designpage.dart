@@ -1,257 +1,74 @@
 import 'package:flutter/material.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/core/app_export.dart';
+import 'package:reenu_susan_kurian_112033_s_application1/widgets/custom_elevated_button.dart';
 
-// ignore_for_file: must_be_immutable
-class GalileoDesignPage extends StatefulWidget {
-  const GalileoDesignPage({Key? key})
+
+class DesignPage extends StatelessWidget {
+  const DesignPage({Key? key})
       : super(
           key: key,
         );
 
   @override
-  GalileoDesignPageState createState() => GalileoDesignPageState();
-}
-
-class GalileoDesignPageState extends State<GalileoDesignPage>
-    with AutomaticKeepAliveClientMixin<GalileoDesignPage> {
-  @override
-  bool get wantKeepAlive => true;
-  @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         body: SizedBox(
-          width: SizeUtils.width,
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                SizedBox(height: 25.v),
-                Column(
-                  children: [
-                    _buildLivingRoom(
-                      context,
-                      image: ImageConstant.imgDepth5Frame0,
-                      livingRoomText: "Front Door",
-                      homeText: "Home",
-                      liveText: "Live",
-                    ),
-                    SizedBox(height: 13.v),
-                    _buildLivingRoom(
-                      context,
-                      image: ImageConstant.imgDepth5Frame0201x358,
-                      livingRoomText: "Living Room",
-                      homeText: "Home",
-                      liveText: "Live",
-                    ),
-                    SizedBox(height: 16.v),
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Padding(
-                        padding: EdgeInsets.only(left: 16.h),
-                        child: Text(
-                          "People",
-                          style: CustomTextStyles.titleMediumMedium,
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 5.v),
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Padding(
-                        padding: EdgeInsets.only(left: 16.h),
-                        child: Text(
-                          "32",
-                          style: theme.textTheme.headlineLarge,
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 8.v),
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Padding(
-                        padding: EdgeInsets.only(left: 16.h),
-                        child: Row(
-                          children: [
-                            Text(
-                              "Now",
-                              style: theme.textTheme.bodyLarge,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 4.h),
-                              child: Text(
-                                "+12%",
-                                style: CustomTextStyles.titleMediumGreenA400,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 23.v),
-                    _buildTimeSlots(context),
-                    SizedBox(height: 11.v),
-                    Container(
-                      height: 20.v,
-                      width: double.maxFinite,
-                      decoration: BoxDecoration(
-                        color: theme.colorScheme.primaryContainer,
-                      ),
-                    ),
-                  ],
+          width: double.maxFinite,
+          child: Column(
+            children: [
+              CustomImageView(
+                imagePath: ImageConstant.imgImage4,
+                height: 217.v,
+                width: 390.h,
+              ),
+              SizedBox(height: 50.v),
+              Container(
+                height: 72.v,
+                width: double.maxFinite,
+                decoration: BoxDecoration(
+                  color: appTheme.gray900,
                 ),
-              ],
-            ),
+              ),
+              SizedBox(height: 48.v),
+              Container(
+                width: 369.h,
+                margin: EdgeInsets.only(
+                  left: 10.h,
+                  right: 9.h,
+                ),
+                child: Text(
+                  "USE A MODEL TO CHECK IMAGE \nmodel will detect anomalies in the image ",
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  textAlign: TextAlign.center,
+                  style: theme.textTheme.titleLarge!.copyWith(
+                    height: 1.75,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              SizedBox(height:35.v),
+              CustomElevatedButton(
+                text: "Open Camera",
+              ),
+            SizedBox(height:50.v),
+              CustomElevatedButton(
+                height: 60.v,
+                width: 179.h,
+                text: "Pick from device",
+                margin: EdgeInsets.only(left: 16.h),
+                alignment: Alignment.centerLeft,
+              ),
+              
+            ],
           ),
         ),
       ),
     );
   }
-
-  /// Section Widget
-  Widget _buildTimeSlots(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16.h),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          Padding(
-            padding: EdgeInsets.only(top: 18.v),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: Container(
-                    height: 145.v,
-                    width: 68.h,
-                    decoration: BoxDecoration(
-                      color: theme.colorScheme.onError,
-                      border: Border(
-                        top: BorderSide(
-                          color: theme.colorScheme.onPrimaryContainer,
-                          width: 2.h,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                SizedBox(height: 25.v),
-                Text(
-                  "10AM",
-                  style: theme.textTheme.labelLarge,
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 18.v),
-            child: Column(
-              children: [
-                Container(
-                  height: 145.v,
-                  width: 90.h,
-                  decoration: BoxDecoration(
-                    color: theme.colorScheme.onError,
-                    border: Border(
-                      top: BorderSide(
-                        color: theme.colorScheme.onPrimaryContainer,
-                        width: 2.h,
-                      ),
-                    ),
-                  ),
-                ),
-                SizedBox(height: 25.v),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: Text(
-                    "11AM",
-                    style: theme.textTheme.labelLarge,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                height: 164.v,
-                width: 126.h,
-                decoration: BoxDecoration(
-                  color: theme.colorScheme.onError,
-                  border: Border(
-                    top: BorderSide(
-                      color: theme.colorScheme.onPrimaryContainer,
-                      width: 2.h,
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(height: 24.v),
-              Align(
-                alignment: Alignment.centerRight,
-                child: Text(
-                  "12PM",
-                  style: theme.textTheme.labelLarge,
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-
-  /// Common widget
-  Widget _buildLivingRoom(
-    BuildContext context, {
-    required String image,
-    required String livingRoomText,
-    required String homeText,
-    required String liveText,
-  }) {
-    return Container(
-      padding: EdgeInsets.all(16.h),
-      decoration: AppDecoration.fillPrimaryContainer,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          CustomImageView(
-            imagePath: image,
-            height: 201.v,
-            width: 358.h,
-            radius: BorderRadius.circular(
-              12.h,
-            ),
-          ),
-          SizedBox(height: 19.v),
-          Text(
-            livingRoomText,
-            style: CustomTextStyles.titleMedium18.copyWith(
-              color: theme.colorScheme.onPrimary,
-            ),
-          ),
-          SizedBox(height: 1.v),
-          Text(
-            homeText,
-            style: theme.textTheme.bodyLarge!.copyWith(
-              color: theme.colorScheme.onPrimaryContainer,
-            ),
-          ),
-          SizedBox(height: 4.v),
-          Text(
-            liveText,
-            style: theme.textTheme.bodyLarge!.copyWith(
-              color: theme.colorScheme.onPrimaryContainer,
-            ),
-          ),
-          SizedBox(height: 14.v),
-        ],
-      ),
-    );
-  }
 }
+
 
 class CustomTextStyles {
 

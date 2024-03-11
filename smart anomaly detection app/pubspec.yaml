@@ -16,6 +16,9 @@ dependencies:
   firebase_core: ^2.15.1
   get_it: ^7.6.0
   watch_it: ^1.0.3
+  fluttertoast: ^8.0.8
+  image_picker: ^1.0.7
+  firebase_ml_model_downloader: ^0.2.4+16
 flutter_icons:
   android: true
   ios: true

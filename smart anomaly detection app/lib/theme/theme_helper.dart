@@ -122,6 +122,7 @@ class ColorSchemes {
 class PrimaryColors {
   get greenA400 => null;
   get blueGray700 => null;
+  get gray900 => null;
 }
 
 PrimaryColors get appTheme => ThemeHelper().themeColor();

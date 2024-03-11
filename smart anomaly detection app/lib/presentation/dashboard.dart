@@ -43,9 +43,9 @@ class _DashboardState
                           child: TabBarView(
                             controller: tabviewController,
                             children: [
-                              GalileoDesignPage(),
-                              GalileoDesignPage(),
-                              GalileoDesignPage(),
+                              DesignPage(),
+                              // GalileoDesignPage(),
+                              // GalileoDesignPage(),
                             ],
                           ),
                         ),
@@ -69,20 +69,12 @@ class _DashboardState
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(height: 10.v),
-          CustomAppBar(
-            actions: [
-              AppbarTrailingImage(
-                imagePath: ImageConstant.imgDepth6Frame0,
-                margin: EdgeInsets.symmetric(horizontal: 16.h),
-              ),
-            ],
-          ),
+        
           SizedBox(height: 10.v),
           Padding(
             padding: EdgeInsets.only(left: 16.h),
             child: Text(
-              "Live View",
+              "Anomaly Detection",
               style: theme.textTheme.headlineMedium,
             ),
           ),
