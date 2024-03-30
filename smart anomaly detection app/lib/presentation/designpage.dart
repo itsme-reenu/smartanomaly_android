@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/core/app_export.dart';
+import 'package:reenu_susan_kurian_112033_s_application1/logic/model_logic.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/widgets/custom_elevated_button.dart';
 
 
@@ -30,9 +31,9 @@ class DesignPage extends StatelessWidget {
                   color: appTheme.gray900,
                 ),
               ),
-              SizedBox(height: 48.v),
+              SizedBox(height: 30.v),
               Container(
-                width: 369.h,
+                width: 300.h,
                 margin: EdgeInsets.only(
                   left: 10.h,
                   right: 9.h,
@@ -50,16 +51,22 @@ class DesignPage extends StatelessWidget {
               ),
               SizedBox(height:35.v),
               CustomElevatedButton(
-                text: "Open Camera",
-              ),
-            SizedBox(height:50.v),
-              CustomElevatedButton(
-                height: 60.v,
-                width: 179.h,
-                text: "Pick from device",
-                margin: EdgeInsets.only(left: 16.h),
-                alignment: Alignment.centerLeft,
-              ),
+                text: "Click to check out the anomaly",
+               onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => ModelLogic()),
+    );
+ },
+),
+            // SizedBox(height:50.v),
+            //   CustomElevatedButton(
+            //     height: 60.v,
+            //     width: 179.h,
+            //     text: "Pick from device",
+            //     margin: EdgeInsets.only(left: 16.h),
+            //     alignment: Alignment.centerLeft,
+            //   ),
               
             ],
           ),
@@ -118,6 +125,7 @@ class ImageConstant {
   static String imgImage1011 = '$imagePath/img_image1_0_1_1.png';
   static String imgImage1012 = '$imagePath/img_image0_0_1.png';
   static String imgImage1013 = '$imagePath/img_image_2.png';
+   static String imgImage4 = '$imagePath/checkimage.png';
 }
 
 

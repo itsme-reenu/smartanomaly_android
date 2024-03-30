@@ -1,7 +1,9 @@
+import 'package:camera/camera.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/firebase_options.dart';
+import 'package:reenu_susan_kurian_112033_s_application1/logic/camera_module.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/presentation/carousel_design.dart';
 import 'core/app_export.dart';
 
@@ -15,6 +17,7 @@ void main() async {
  ]);
 
  ThemeHelper().changeTheme('primary');
+ cameras = await availableCameras();
  runApp(MyApp());
 }
 

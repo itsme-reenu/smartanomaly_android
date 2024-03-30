@@ -1,1 +1,13 @@
-'Abuse','Arrest','Fighting','RoadAccidents','Shooting', 'Arrest', 'Vandalism', 'Assault', 'stealing', 'Arson', 'Normalvideos', 'Burglary', 'Explosion', 'Robbery'
+0:Abuse
+1:Arrest
+2:Fighting
+3:RoadAccidents
+4:Shooting
+5:Vandalism
+6:Assault
+7:stealing
+8:Arson
+9:Normalvideos
+10:Burglary
+11:Explosion
+12:Robbery

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/core/app_export.dart';
 import 'package:reenu_susan_kurian_112033_s_application1/presentation/designpage.dart';
+import 'package:reenu_susan_kurian_112033_s_application1/presentation/designpage_2.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -10,9 +11,7 @@ class Dashboard extends StatefulWidget {
   _DashboardState createState() => _DashboardState();
 }
 
-class _DashboardState
-    extends State<Dashboard>
-    with TickerProviderStateMixin {
+class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
   late TabController tabviewController;
 
   @override
@@ -44,8 +43,8 @@ class _DashboardState
                             controller: tabviewController,
                             children: [
                               DesignPage(),
-                              // GalileoDesignPage(),
-                              // GalileoDesignPage(),
+                              DataVisulaization(), // Placeholder for the second tab
+                              Container(), // Placeholder for the third tab
                             ],
                           ),
                         ),
@@ -69,7 +68,7 @@ class _DashboardState
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-        
+
           SizedBox(height: 10.v),
           Padding(
             padding: EdgeInsets.only(left: 16.h),
@@ -109,7 +108,7 @@ class _DashboardState
           ),
           Tab(
             child: Text(
-              "Favorites",
+              "Data Visualisations",
             ),
           ),
           Tab(

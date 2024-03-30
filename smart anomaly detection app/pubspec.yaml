@@ -8,6 +8,7 @@ dependencies:
     sdk: flutter
   cached_network_image: ^3.3.0
   carousel_slider: ^4.0.0
+  http: ^1.2.1
   flutter_svg: ^2.0.9
   intl: ^0.18.0
   smooth_page_indicator: ^1.1.0
@@ -16,9 +17,13 @@ dependencies:
   firebase_core: ^2.15.1
   get_it: ^7.6.0
   watch_it: ^1.0.3
+  camera: ^0.10.5+9
   fluttertoast: ^8.0.8
   image_picker: ^1.0.7
+  path_provider: ^2.1.2
+  permission_handler: ^11.3.0
   firebase_ml_model_downloader: ^0.2.4+16
+  syncfusion_flutter_charts: ^24.2.9
 flutter_icons:
   android: true
   ios: true
@@ -29,7 +34,8 @@ dev_dependencies:
 flutter: 
   uses-material-design: true
   assets: 
-    - assets/
+    - assets/CrimesData.json
+    - assets/labels.txt
     - assets/images/
   fonts: 
     - family: Space Grotesk

@@ -12,7 +12,12 @@
           "package_name": "com.example.smartanomaly"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1023510013619-vm5e8bgclpro02c005jujr2egiv6pd5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAa6nIhgahyAhTZl9hUSAsrD3WsFRLEg68"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023510013619-vm5e8bgclpro02c005jujr2egiv6pd5g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1023510013619-hl2bt1fbb56r49v4o8rhvfbgqb8evhka.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.reenususankuriansapplication.app.testProject"
+              }
+            }
+          ]
         }
       }
     }
